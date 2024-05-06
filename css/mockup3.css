@@ -1,0 +1,193 @@
+:root {
+    /*========== Colors ==========*/
+/* Color mode HSL(hue, saturation, lightness) */
+--first-color: hsl(19, 67%, 52%);
+--first-color-dark: hsl(27, 73%, 47%) ;
+--first-color-light: hsl(24, 63%, 53%);
+--title-color: hsl(0, 0%, 87%);
+--text-color: hsl(0, 0%, 69%);
+--body-color: hsl(200, 12% , 5% );
+--container-color: hsl(30, 10%, 8%);
+--border-color: hsl(0, 0%, 20%);
+--white: #fff;
+--blanco: #ffffff;
+--oscuro: #212121;
+--primario: #FFC107;
+--secundario: #0097A7;
+--gris: #757575;
+--grisClaro: #DFE9F3;
+--orange: #f39708;
+--azulOscuro: #180560;
+--claro: #efd2be;
+--hueso: #f8f6f5;
+--dark-orange: #ff6e00;
+--orange-claro: #febd69;
+
+  /*========== Font and typography ==========*/
+/* .5rem = 8px | 1rem = 16px ... */
+--body-font: 'Poppins', sans-serif;
+--big-font-size: 3rem;
+--h1-font-size: 2.5rem;
+--h2-font-size: 2.25rem;
+--h3-font-size: 1.5rem;
+--larger-font-size: 1.2rem;
+--large-font-size: 1.125rem;
+
+/*========== Font weight ==========*/
+--weight-300: 300;
+--weight-400: 400;
+--weight-600: 600;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*-------NAVEGATION--------*/
+.menu {
+    background-color: #000000;
+}
+
+.card-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-menu li a{
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 15px;
+}
+.card-menu li a:hover{
+    background-color: orange;
+}
+/*-------END NAVEGATION CODE------------*/
+
+/*------CONTAINER CODE-----------------*/
+
+.container {
+    background-color: var(--claro);
+    min-height: 673px;
+    margin: 10px;
+}
+
+.section-container {
+    display: grid;
+    place-items: center;
+}
+
+.section {
+    width: 40%;
+    padding: 10px ;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+
+
+#form-container {
+    height: 400px;
+    background-color: rgb(110, 196, 191);
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: auto; /* Columna única */
+    border-radius: 5px;
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los campos "Name" y "Email" */
+    grid-gap: 10px; /* Espacio entre columnas */
+}
+
+#email-field,
+#phone-field{
+    grid-column: 1;
+    margin-top: -5px;
+}
+
+
+#message-field {
+    grid-column: 2;
+   margin-top: -77px;
+}
+
+#phone-field {
+    display: grid;
+    grid-template-columns: auto; /* Una columna */
+    
+}
+
+.phone-input-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Dos columnas: una para el menú desplegable y otra para el campo de entrada */
+    align-items: center; /* Alinear verticalmente los elementos */
+    margin-top: -50px;
+}
+
+.country-code {
+    padding-right: 5px; /* Espacio adicional entre el menú desplegable y el campo de entrada */
+}
+
+
+.form-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 1 / span 2; /* Ocupa dos columnas */
+}
+
+.form-info {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    grid-column: 1 / span 2; /* Ocupa dos columnas */
+}
+
+
+.btn {
+    width: 100px;
+    grid-column: 1 ;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(17, 72, 226);
+    border-radius: 5px ;
+    border: none;
+    position: relative;
+    left: 400px;
+}
+
+.btn:hover {
+    background-color: #0079FF;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mockup3.css">
+    <title>Forms with grid</title>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul class="card-menu">
+                <li>
+                    <a href="../index.html">Mockup 1</a>
+                </li>
+                <li>
+                    <a href="mockup2.html">Mockup 2</a>
+                </li>
+                <li>
+                    <a href="mockup3.html">Mockup 3</a>
+                </li>
+                <li>
+                    <a href="mockup4.html">Mockup 4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section-container">
+            <div class="section">
+                <form id="form-container" action="/submit-path" method="post">
+                    <h1 class="form-title">Contact Form</h1>
+                    <p class="form-info">Please, enter your information</p>
+                
+                    <div class="form-fields">
+                        <div id="name-field">
+                            <label for="name-input">Full Name</label>
+                            <input type="text" name="name" id="name-input" placeholder="Robinson Chalas">
+                        </div>
+                
+                        <div id="form-fields">
+                            <label for="reason-select">Available Date</label>
+                            <select id="reason-select" name="reason">
+                                <option value="">Select</option>
+                                <option value="date">05/05/2024</option>
+                                <option value="date">05/06/2024</option>
+                                <option value="date">05/07/2024</option>
+                                <option value="date">05/08/2024</option>
+                                <option value="date">05/09/2024</option>
+                                <option value="date">05/10/2024</option>
+                                <!-- Add more options here -->
+                            </select>
+                        </div>
+
+                        <div id="email-field">
+                            <label for="email-input">Email</label>
+                            <input type="email" name="email" id="email-input" placeholder="robinsonchalasj@gmail.com">
+                        </div>
+
+                        <div id="phone-field" class="phone-field">
+                            <label for="phone-input">Phone Number</label>
+                            <div class="phone-input-container">
+                                <select id="country-code" class="country-code">
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>
+                                    <option value="+49">+49</option>
+                                    <!-- Agrega más opciones según sea necesario -->
+                                </select>
+                                <input type="tel" name="phone" id="phone-input" placeholder="123456789">
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div id="message-field">
+                            <label for="message-area">Share Your Message</label>
+                            <textarea id="message-area" rows="4"cols="50"  name="message" placeholder="Message"></textarea>
+                        </div>
+
+                        <button class="btn" type="submit">Book Now</button>
+                    </div>
+                </form>
+  
+            </div>
+        </section>
+    </main>
+</body>
+</html>
